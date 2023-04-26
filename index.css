@@ -100,7 +100,8 @@ header,
 }
 
 .container {
-    width: 70%;
+    /* Procenta se používají především pro určění šířky v RD */
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -115,7 +116,8 @@ header,
 }
 
 .feature-image {
-    width: 310px;
+    /* Každý obrázek zabýrá skoro 50% volného prostoru */
+    width: 48.8%;
     border-radius: 4.6px;
 }
 
