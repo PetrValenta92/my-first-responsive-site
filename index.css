@@ -102,12 +102,16 @@ header,
 .container {
     /* Procenta se používají především pro určění šířky v RD */
     width: 80%;
+    /* Max-widt převezme kontrolu jakmile je dosáhnuto hodnoty */
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .main-image {
     width: 100%;
-    margin-bottom: 32px;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 32px;
 }
 
 .section-two-image-container {
