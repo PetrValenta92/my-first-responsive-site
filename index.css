@@ -13,17 +13,18 @@ h3 {
 
 h1 {
     color: whitesmoke;
-    font-size: 36px;
+    /* font-size em units take their parents font-size value as a base*/
+    font-size: 2.25em; /* h1 (36px) / browser default (16px) font-size = 2.25em */
 }
 
 h2 {
     color: #451c7a;
-    font-size: 28px;
+    font-size: 1.75em;
     margin-top: 0;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 p {
@@ -32,7 +33,7 @@ p {
 
 .subheading {
     display: block;
-    font-size: 20px;
+    font-size: 0.56em; /* .subheading font-size (20px) / h1 (36px) font-size = 0.56em  */
     color: #d0aaff;
 }
 
@@ -52,12 +53,18 @@ a:active {
     color: #d4b44c;
 }
 
+/* 
+Margin and padding calues in em are 
+relative to the element's current font size 
+*/
+
 .btn {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 500;
     text-decoration: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: .5em 1em;
+    margin: 0 .25em .25em 0;
     border-radius: 4.6px;
 }
 
@@ -87,7 +94,7 @@ a:active {
 header, 
 section, 
 footer {
-    padding: 46px 0;
+    padding: 2.875em 0;
 }
 
 header, 
@@ -111,7 +118,7 @@ header,
     width: 100%;
     max-width: 600px;
     display: block;
-    margin: 0 auto 32px;
+    margin: 0 auto 2em;
 }
 
 .section-two-image-container {
