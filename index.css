@@ -6,8 +6,12 @@ body {
 
 /* ----- TYPOGRAPHY ----- */
 
-/* A rem unit is ALWAYS relative to the root <html> element */
-/* An em unit is ALWAYS relative to its parent element font-size value*/
+/* A rem unit is ALWAYS relative to the root <html> element. */
+/* Better to use it for font-sizes (no compoungs, more predictible). */
+
+/* An em unit is ALWAYS relative to its parent element font-size value. */
+/* Better to use it for padding and margin (propotional scaling, 
+based on element's current font-size). */
 
 h1, 
 h3 {
@@ -29,8 +33,10 @@ h3 {
     font-size: 1.25rem;
 }
 
+/* The line-height set to a unitless value relative to its font size */
+
 p {
-    line-height: 23px;
+    line-height: 1.5; /* 1.5 * 16px = 24px */
 }
 
 .subheading {
@@ -109,10 +115,10 @@ header,
 }
 
 .container {
-    /* Procenta se používají především pro určění šířky v RD */
+    /* % better use for width (flexible containers, flexible images) */
     width: 80%;
-    /* Max-widt převezme kontrolu jakmile je dosáhnuto hodnoty */
-    max-width: 800px;
+    /* Px is better use for max-width (easier to manage, ensure consistency) */
+    max-width: 800px; /* Max-width takes control when the value is reached */
     margin: 0 auto;
 }
 
@@ -129,7 +135,6 @@ header,
 }
 
 .feature-image {
-    /* Každý obrázek zabýrá skoro 50% volného prostoru */
     width: 48.8%;
     border-radius: 4.6px;
 }
