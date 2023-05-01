@@ -4,14 +4,14 @@ body {
   margin: 0;
 }
 
-/* ----- TYPOGRAPHY ----- */
-
 /* A rem unit is ALWAYS relative to the root <html> element. */
 /* Better to use it for font-sizes (no compoungs, more predictible). */
 
 /* An em unit is ALWAYS relative to its parent element font-size value. */
 /* Better to use it for padding and margin (propotional scaling, 
 based on element's current font-size). */
+
+/* ----- TYPOGRAPHY ----- */
 
 h1,
 h3 {
@@ -23,10 +23,14 @@ h1 {
   font-size: 1.75rem;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   h1 {
     font-size: 2.25rem;
   }
+}
+
+nav {
+  font-size: 1.125rem;
 }
 
 h2 {
@@ -35,7 +39,7 @@ h2 {
   margin-top: 0;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   h2 {
     font-size: 1.75rem;
   }
@@ -51,7 +55,7 @@ p {
   line-height: 1.5; /* 1.5 * 16px = 24px */
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   p {
     font-size: 1.125rem;
   }
@@ -63,7 +67,7 @@ p {
   color: #d0aaff;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   .subheading {
     font-size: 1.25rem;
   }
@@ -101,7 +105,7 @@ relative to the element's current font size
   text-align: center;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   .btn {
     display: inline-block;
     margin: 0 0.25em 0.25em 0;
@@ -137,7 +141,7 @@ footer {
   padding: 1.25em 0;
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   header,
   section,
   footer {
@@ -152,6 +156,21 @@ header,
 
 .section-two {
   color: whitesmoke;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (width > 768px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 }
 
 .container {
@@ -204,6 +223,12 @@ footer {
 
 /* ------------ NAVIGATION ------------ */
 
+@media (width <= 768px) {
+  nav {
+    margin-top: 1.5em;
+  }
+}
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -215,6 +240,20 @@ ul {
   list-style-type: none;
 }
 
-li:not(:last-child) /* :not(:last-child) === apply for EVERY element, BUT the last one */ {
-  border-bottom: 1px solid #a190b6;
+@media (width > 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25em;
+  }
+}
+
+li {
+  padding: 1em 0;
+}
+
+@media (width <= 768px) {
+  li:not(:last-child) /* :not(:last-child) === apply for EVERY element, BUT the last one */ {
+    border-bottom: 1px solid #a190b6;
+  }
 }
