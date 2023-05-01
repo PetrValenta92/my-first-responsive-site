@@ -197,23 +197,19 @@ header .container {
 Just suggestion!
  */
 
-@media (width >= 480px) {
-  .section-two-image-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.section-two-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.feature-item {
+  flex: 1 250px; /* flex-basis: 250px flex-grow:1 */
 }
 
 .feature-image {
   width: 100%;
   border-radius: 4.6px;
-  margin-bottom: 1em;
-}
-
-@media (width >= 480px) {
-  .feature-image {
-    width: 48.8%;
-  }
 }
 
 footer {
