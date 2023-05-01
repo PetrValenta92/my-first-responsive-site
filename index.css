@@ -170,7 +170,7 @@ header,
 }
 
 /* 
-|------COMMON BRAKPOINTS---------\
+|------ COMMON BRAKPOINTS ---------\
 480px - Mobile Devices
 768px - Tablets
 1024px - Small monitors/Laptops devices
@@ -200,4 +200,21 @@ Just suggestion!
 footer {
   text-align: center;
   color: #5f29a3;
+}
+
+/* ------------ NAVIGATION ------------ */
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li:not(:last-child) /* :not(:last-child) === apply for EVERY element, BUT the last one */ {
+  border-bottom: 1px solid #a190b6;
 }
