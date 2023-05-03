@@ -1,15 +1,40 @@
-body {
-  color: #2b283a;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
+/* --------- CUSTOME PROPERTIES ------- */
+:root {
+  /* COLORS */
+  --clr-black: 4, 5, 10;
+  --clr-dark-blue: 1, 22, 39;
+  --clr-white: 235, 240, 246;
+  --clr-orange: 255, 114, 2;
+  --clr-red: 253, 0, 0;
+  --clr-yellow: 254, 203, 88;
 }
 
-/* A rem unit is ALWAYS relative to the root <html> element. */
-/* Better to use it for font-sizes (no compoungs, more predictible). */
+/* FONTS */
 
-/* An em unit is ALWAYS relative to its parent element font-size value. */
-/* Better to use it for padding and margin (propotional scaling, 
-based on element's current font-size). */
+@font-face {
+  font-family: FormulaRegular;
+  src: url(./fonts/Formula1-Regular_web_0.ttf);
+}
+
+@font-face {
+  font-family: FormulaBold;
+  src: url(./fonts/Formula1-Bold_web_0.ttf);
+}
+
+@font-face {
+  font-family: FormulaWide;
+  src: url(./fonts/Formula1-Wide_web_0.ttf);
+}
+
+
+/* ---------SET UP THE BODY ------------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgba(var(--clr-black));
+  font-family: FormulaRegular, Arial, Helvetica, sans-serif;
+}
 
 /* ----- TYPOGRAPHY ----- */
 
@@ -19,8 +44,9 @@ h3 {
 }
 
 h1 {
-  color: whitesmoke;
-  font-size: 1.75rem;
+  color: rgba(var(--clr-white));
+  font-family: FormulaWide, Arial, Helvetica, sans-serif;
+  padding: 0;
 }
 
 @media (width > 768px) {
@@ -34,7 +60,7 @@ nav {
 }
 
 h2 {
-  color: #451c7a;
+  color: rgba(var(--clr-black));
   font-size: 1.375rem;
   margin-top: 0;
 }
@@ -49,27 +75,13 @@ h3 {
   font-size: 1.25rem;
 }
 
-/* The line-height set to a unitless value relative to its font size */
-
 p {
-  line-height: 1.5; /* 1.5 * 16px = 24px */
+  line-height: 1.5; 
 }
 
 @media (width > 768px) {
   p {
     font-size: 1.125rem;
-  }
-}
-
-.subheading {
-  display: block;
-  font-size: 0.875rem;
-  color: #d0aaff;
-}
-
-@media (width > 768px) {
-  .subheading {
-    font-size: 1.25rem;
   }
 }
 
@@ -80,7 +92,6 @@ p {
 /* ----- LINKS ----- */
 
 a {
-  color: #ef5839;
   text-decoration: underline dotted;
 }
 
@@ -88,11 +99,6 @@ a:hover,
 a:active {
   color: #d4b44c;
 }
-
-/* 
-Margin and padding calues in em are 
-relative to the element's current font size 
-*/
 
 .btn {
   font-size: 1.125rem;
@@ -113,27 +119,37 @@ relative to the element's current font size
 }
 
 .btn-dark {
-  color: whitesmoke;
-  background: #5f29a3;
+  color: rgba(var(--clr-yellow));
+  background: rgba(var(--clr-dark-blue));
 }
 
 .btn-mid {
-  color: #5f29a3;
-  background: #f0e0ff;
+  color: rgba(var(--clr-dark-blue));
+  background: rgba(var(--clr-orange));
 }
 
 .btn-light {
-  color: #5f29a3;
-  background: whitesmoke;
+  color: rgba(var(--clr-black));
+  background: rgba(var(--clr-yellow));
 }
 
 .btn:hover,
 .btn:active {
-  color: #2b238a;
-  background-color: #f3e885;
+  color: rgba(var(--clr-dark-blue));
+  background-color: rgba(var(--clr-yellow), .5);
 }
 
 /* ----- LAYOUT ----- */
+
+header img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.formula {
+  display: flex;
+  justify-content: center;
+}
 
 header,
 section,
@@ -151,7 +167,7 @@ footer {
 
 header,
 .section-two {
-  background-color: #5f29a3;
+  background-color: rgba(var(--clr-red));
 }
 
 .section-two {
@@ -174,28 +190,17 @@ header .container {
 }
 
 .container {
-  /* % better use for width (flexible containers, flexible images) */
   width: 80%;
-  /* Px is better use for max-width (easier to manage, ensure consistency) */
-  max-width: 800px; /* Max-width takes control when the value is reached */
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .main-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   display: block;
   margin: 0 auto 2em;
 }
-
-/* 
-|------ COMMON BRAKPOINTS ---------\
-480px - Mobile Devices
-768px - Tablets
-1024px - Small monitors/Laptops devices
-1280px - Large monitors
-Just suggestion!
- */
 
 .section-two-image-container {
   display: flex;
@@ -204,7 +209,7 @@ Just suggestion!
 }
 
 .feature-item {
-  flex: 1 250px; /* flex-basis: 250px flex-grow:1 */
+  flex: 1 250px;
 }
 
 .feature-image {
@@ -246,6 +251,12 @@ ul {
 
 li {
   padding: 1em 0;
+}
+
+li:hover,
+li:focus,
+li:active {
+  font-family: FormulaBold, Helvet;
 }
 
 @media (width <= 768px) {
