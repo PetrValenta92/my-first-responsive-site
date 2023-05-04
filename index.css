@@ -62,6 +62,7 @@ nav {
 h2 {
   color: rgba(var(--clr-black));
   font-size: 1.375rem;
+  font-size: FormulaWide, Arial, Helvetica, sans-serif;;
   margin-top: 0;
 }
 
@@ -209,7 +210,12 @@ header .container {
 }
 
 .feature-item {
-  flex: 1 250px;
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+.champion {
+  flex-basis: 100%;
 }
 
 .feature-image {
