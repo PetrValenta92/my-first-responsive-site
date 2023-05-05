@@ -27,6 +27,15 @@
 }
 
 
+
+/* ---------SET UP THE HTML ------------ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 /* ---------SET UP THE BODY ------------ */
 
 body {
@@ -35,6 +44,8 @@ body {
   color: rgba(var(--clr-black));
   font-family: FormulaRegular, Arial, Helvetica, sans-serif;
 }
+
+
 
 /* ----- TYPOGRAPHY ----- */
 
@@ -47,23 +58,57 @@ h1 {
   color: rgba(var(--clr-white));
   font-family: FormulaWide, Arial, Helvetica, sans-serif;
   padding: 0;
+  font-size: 1.375rem;
+}
+
+@media (width > 545px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (width > 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 @media (width > 768px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2.3;
+  }
+}
+
+@media (width >= 925px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+@media (width >= 1440px) {
   h1 {
     font-size: 2.25rem;
   }
 }
 
-nav {
-  font-size: 1.125rem;
-}
+@media (width <= 768px) {
+  h1 {
+    margin-top: 1em;
+  }
+} 
 
 h2 {
-  color: rgba(var(--clr-black));
-  font-size: 1.375rem;
-  font-size: FormulaWide, Arial, Helvetica, sans-serif;;
+  font-family: FormulaBold, Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
   margin-top: 0;
+}
+
+@media (width > 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (width > 768px) {
@@ -72,8 +117,18 @@ h2 {
   }
 }
 
+.section-two h2 {
+  color: inherit;
+}
+
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+@media (width > 768px) {
+  h3 {
+    font-size: 1.375rem;
+  }
 }
 
 p {
@@ -86,9 +141,56 @@ p {
   }
 }
 
-.section-two h2 {
-  color: inherit;
+
+
+/* ------------ NAVIGATION ------------ */
+
+nav {
+  font-size: 1.125rem;
 }
+
+@media (width <= 768px) {
+  nav {
+    margin-top: 1.5em;
+  }
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@media (width > 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25em;
+  }
+}
+
+li {
+  padding: 1em 0;
+}
+
+li:hover,
+li:focus,
+li:active {
+  font-family: FormulaBold, Helvet;
+}
+
+@media (width <= 768px) {
+  li:not(:last-child) /* :not(:last-child) === apply for EVERY element, BUT the last one */ {
+    border-bottom: 1px solid #a190b6;
+  }
+}
+
+
 
 /* ----- LINKS ----- */
 
@@ -139,6 +241,8 @@ a:active {
   color: rgba(var(--clr-dark-blue));
   background-color: rgba(var(--clr-yellow), .5);
 }
+
+
 
 /* ----- LAYOUT ----- */
 
@@ -225,48 +329,4 @@ header .container {
 
 footer {
   text-align: center;
-  color: #5f29a3;
-}
-
-/* ------------ NAVIGATION ------------ */
-
-@media (width <= 768px) {
-  nav {
-    margin-top: 1.5em;
-  }
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-@media (width > 768px) {
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1.25em;
-  }
-}
-
-li {
-  padding: 1em 0;
-}
-
-li:hover,
-li:focus,
-li:active {
-  font-family: FormulaBold, Helvet;
-}
-
-@media (width <= 768px) {
-  li:not(:last-child) /* :not(:last-child) === apply for EVERY element, BUT the last one */ {
-    border-bottom: 1px solid #a190b6;
-  }
 }
