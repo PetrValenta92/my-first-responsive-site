@@ -26,15 +26,11 @@
   src: url(./fonts/Formula1-Wide_web_0.ttf);
 }
 
-
-
 /* ---------SET UP THE HTML ------------ */
 
 html {
   scroll-behavior: smooth;
 }
-
-
 
 /* ---------SET UP THE BODY ------------ */
 
@@ -44,8 +40,6 @@ body {
   color: rgba(var(--clr-black));
   font-family: FormulaRegular, Arial, Helvetica, sans-serif;
 }
-
-
 
 /* ----- TYPOGRAPHY ----- */
 
@@ -97,7 +91,7 @@ h1 {
   h1 {
     margin-top: 1em;
   }
-} 
+}
 
 h2 {
   font-family: FormulaBold, Arial, Helvetica, sans-serif;
@@ -117,6 +111,12 @@ h2 {
   }
 }
 
+@media (width >= 1440px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 .section-two h2 {
   color: inherit;
 }
@@ -132,7 +132,7 @@ h3 {
 }
 
 p {
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
 @media (width > 768px) {
@@ -140,8 +140,6 @@ p {
     font-size: 1.125rem;
   }
 }
-
-
 
 /* ------------ NAVIGATION ------------ */
 
@@ -155,12 +153,7 @@ nav {
   }
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-ul {
+nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -186,21 +179,21 @@ li:active {
 
 @media (width <= 768px) {
   li:not(:last-child) /* :not(:last-child) === apply for EVERY element, BUT the last one */ {
-    border-bottom: 1px solid #a190b6;
+    border-bottom: 1px solid rgba(var(--clr-white), 0.7);
   }
 }
 
-
-
 /* ----- LINKS ----- */
 
-a {
-  text-decoration: underline dotted;
+nav a {
+  color: rgba(var(--clr-white));
+  text-decoration: none;
 }
 
-a:hover,
-a:active {
-  color: #d4b44c;
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: rgba(var(--clr-yellow));
 }
 
 .btn {
@@ -237,21 +230,29 @@ a:active {
 }
 
 .btn:hover,
+.btn:focus,
 .btn:active {
   color: rgba(var(--clr-dark-blue));
-  background-color: rgba(var(--clr-yellow), .5);
+  background-color: rgba(var(--clr-yellow), 0.5);
 }
 
+.section-two .btn:hover,
+.section-two .btn:focus,
+.section-two .btn:active {
+  color: rgba(var(--clr-white));
+  background-color: rgba(var(--clr-dark-blue), 0.9);
+}
 
+.section-two .btn-dark:hover,
+.section-two .btn-dark:focus,
+.section-two .btn-dark:active {
+  color: rgba(var(--clr-dark-blue));
+  background-color: rgba(var(--clr-white));
+}
 
 /* ----- LAYOUT ----- */
 
-header img {
-  width: 100%;
-  max-width: 100px;
-}
-
-.formula {
+.title {
   display: flex;
   justify-content: center;
 }
@@ -276,7 +277,7 @@ header,
 }
 
 .section-two {
-  color: whitesmoke;
+  color: rgba(var(--clr-white));
 }
 
 header .container {
@@ -318,15 +319,31 @@ header .container {
   flex-grow: 1;
 }
 
-.champion {
-  flex-basis: 100%;
-}
-
 .feature-image {
   width: 100%;
   border-radius: 4.6px;
 }
 
+@media (width >= 968px) {
+  .champion {
+    flex-basis: 100%;
+  }
+}
+
 footer {
   text-align: center;
+}
+
+.media-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+@media (width > 768px) {
+  .media-container {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }
