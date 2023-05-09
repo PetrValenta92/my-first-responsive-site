@@ -92,6 +92,7 @@ Teams section - monitor (1440px)
 - Mobile first
 - Responsive design
 - Media queries
+- Relative units
 
 ### What I learned
 
