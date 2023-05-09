@@ -37,6 +37,7 @@ The website:
 ### Screenshot
 
 Navigation mobile (425px)
+
 ![Mobile](./images/screenshots/Nav_425px.png)
 
 Navigation tablet (425px)
