@@ -341,6 +341,12 @@ footer {
   gap: 3rem;
 }
 
+@media (width <= 320px) {
+  .media-container {
+    gap: 2rem;
+  }
+}
+
 @media (width > 768px) {
   .media-container {
     flex-direction: row;
