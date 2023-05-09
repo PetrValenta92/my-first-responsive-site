@@ -2,13 +2,13 @@
 
 Hello and welcome! Thank you for stopping by.🤠
 
-This is a solution to the Responsive site project from _Module 6 - Responsive site_ of the [The Frontend Career Path](https://scrimba.com/learn/frontend).
+This is a solution to the "Responsive site" project from _Module 6 - Responsive site_ of the [The Frontend Career Path](https://scrimba.com/learn/frontend).
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The project](#the-challenge)
-  - [How to use the app](#how-to-use-the-app)
+  - [How to use the site](#how-to-use-the-app)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -23,16 +23,17 @@ This is a solution to the Responsive site project from _Module 6 - Responsive si
 
 ### The project
 
-The website:
+The site is built with:
 
-- View a menu of available food items
-- Add food items to a cart
-- Remove food items from the cart
-- Place an order
-- Fill the credit/debit card information in
-- Receive the confirmation message
+- Responsive design
+- Mobile first approach
+- Functional links to other pages
 
-### How to use the app
+### How to use the site
+
+It's simple. 😉 An user opens the site via the link https://petrvalenta92.github.io/my-first-responsive-site/ on his/her smartphone or computer.
+The navigation will takes him/her to the different sections of the page. S/he can click on different links to get to related pages.
+If the user wants to see the design of the page, he/she can use the "Dev Tools", which can be accessed using the F12 key (or by pressing the right mouse button and selecting "Inspect").
 
 ### Screenshot
 
@@ -99,7 +100,7 @@ Then I wrote the JavaScript part of the app. There I used mostly the new knowled
 
 ### Continued development
 
-In the future I'd like to update the layout to be responsive! Also I would like to get involved with possible "meal deal" offers. A discount will appear based on combinations of meals ordered. I would also like to link the app to a local database. This will store orders, assign them identification numbers, collect customer information and then offer them the same meals as the last order.
+In the future I'd like to update the Teams section layout with GRID technology to be more responsive.
 
 ## Author
 
