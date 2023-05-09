@@ -225,7 +225,7 @@ nav a:active {
 }
 
 .btn-light {
-  color: rgba(var(--clr-black));
+  color: rgba(var(--clr-dark-blue));
   background: rgba(var(--clr-yellow));
 }
 
@@ -239,14 +239,7 @@ nav a:active {
 .section-two .btn:hover,
 .section-two .btn:focus,
 .section-two .btn:active {
-  color: rgba(var(--clr-white));
-  background-color: rgba(var(--clr-dark-blue), 0.9);
-}
-
-.section-two .btn-dark:hover,
-.section-two .btn-dark:focus,
-.section-two .btn-dark:active {
-  color: rgba(var(--clr-dark-blue));
+  color: rgba(var(--clr-black));
   background-color: rgba(var(--clr-white));
 }
 
