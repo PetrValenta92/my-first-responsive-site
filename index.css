@@ -349,7 +349,6 @@ footer {
 
 @media (width > 768px) {
   .media-container {
-    flex-direction: row;
     gap: 1.5rem;
   }
 }
