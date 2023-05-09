@@ -95,8 +95,9 @@ Teams section - monitor (1440px)
 
 ### What I learned
 
-I built the project based on the provided design Figma template. First I have had prepared the HTML and CSS part of the app on which I was able to practice my knowledge of semantic HTML5 and CSS. For easier work with layout I used Flexbox several times. Also I used the custom properties for easier work with colors and its oppacity. For the buttons I have used different pseudoclasses to enrich the user's experience.
-Then I wrote the JavaScript part of the app. There I used mostly the new knowledge which I have had learned from _Module 5 - Essential JavaScript concepts_
+I have had created this page based on the project I created during the lesson _Module 6 - Responsive site_.
+Then I modified the page topic, added new color custome properties, add new suitable fonts and included links to related web pages.
+I added a few breakpoints to make the site even more user-friendly.
 
 ### Continued development
 
