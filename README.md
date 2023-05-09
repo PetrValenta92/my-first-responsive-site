@@ -36,17 +36,43 @@ The website:
 
 ### Screenshot
 
+_Navigation menu_
+
 Navigation mobile (425px)
 
 ![Mobile](./images/screenshots/Nav_425px.png)
 
-Navigation tablet (425px)
+Navigation tablet (768px)
 
 ![Tablet](./images/screenshots/Nav_768px.png)
 
-Navigation monitor (425px)
+Navigation monitor (1440px)
 
 ![Monitor](./images/screenshots/Nav_1440px.png)
+
+_Buttons_
+
+Buttons monitor (768px)
+
+![Mobile](./images/screenshots/Buttons_768px.png)
+
+Buttons monitor (1440px)
+
+![Monitor](./images/screenshots/Buttons_1440px.png)
+
+_Teams section_
+
+Teams section mobile (425px)
+
+![Mobile](./images/screenshots/Teams_425px.png)
+
+Teams section tablet (768px)
+
+![Tablet](./images/screenshots/Teams_768px.png)
+
+Teams section monitor (1440px)
+
+![Monitor](./images/screenshots/Teams_1440px.png)
 
 ### Links
 
