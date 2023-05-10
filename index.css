@@ -83,7 +83,7 @@ h1 {
 
 @media (width >= 1440px) {
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 }
 
@@ -133,6 +133,7 @@ h3 {
 
 p {
   line-height: 1.5;
+  font-family: Helvetica, sans-serif;
 }
 
 @media (width > 768px) {
@@ -171,12 +172,6 @@ li {
   padding: 1em 0;
 }
 
-li:hover,
-li:focus,
-li:active {
-  font-family: FormulaBold, Helvet;
-}
-
 @media (width <= 768px) {
   li:not(:last-child) /* :not(:last-child) === apply for EVERY element, BUT the last one */ {
     border-bottom: 1px solid rgba(var(--clr-white), 0.7);
@@ -188,12 +183,14 @@ li:active {
 nav a {
   color: rgba(var(--clr-white));
   text-decoration: none;
+  padding: .5rem .25rem;
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
   color: rgba(var(--clr-yellow));
+  font-family: FormulaBold, Helvet;
 }
 
 .btn {
