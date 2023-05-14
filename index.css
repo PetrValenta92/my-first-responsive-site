@@ -319,14 +319,20 @@ header .container {
   flex-grow: 1;
 }
 
+@media (width >= 968px) {
+  .champion {
+    flex-basis: 100%;
+  }
+}
+
 .team-logo {
   width: 100%;
   height: 15vh;
 }
 
 @media (width >= 968px) {
-  .champion {
-    flex-basis: 100%;
+  .champion-logo {
+    height: 25vh;
   }
 }
 
